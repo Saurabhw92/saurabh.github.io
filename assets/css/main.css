@@ -3388,6 +3388,7 @@ input, select, textarea {
 		#intro h1 {
 			font-size: 5rem;
 			line-height: 1;
+			text-transform: none;
 		}
 
 		#intro p {
