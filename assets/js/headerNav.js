@@ -28,7 +28,8 @@ class MyHeader extends HTMLElement {
 						<ul class="links">
 							<li class=${activePage === 'projects' ? "active" : ''}><a href="index.html">Projects</a></li>
 							<li class=${activePage === 'education' ? "active" : ''}><a href="education.html">Education</a></li>
-							<li class=${activePage === 'courses' ? "active" : ''}><a href="elements.html">Courses & Certifications</a></li>
+							<li class=${activePage === 'courses' ? "active" : ''}><a href="courses.html">Courses & Certifications</a></li>
+              <li class=${activePage === 'elements' ? "active" : ''}><a href="elements.html">Elements</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
