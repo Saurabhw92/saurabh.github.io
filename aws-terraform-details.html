@@ -23,33 +23,37 @@
 						<!-- Post -->
 						<section class="post">
 							<header class="major">
-								<h1>GitLab CI/CD and AWS Cloud Development Kit (CDK)</h1>
+								<h1>GitLab CI/CD and Terraform</h1>
 							</header>
 
 							<!-- Text stuff -->
 								<h2>What is the project about?</h2>
-								<p>This project involves several key components that work together to automate the deployment of a React application to AWS. The first component is the React Application Setup, which includes installing Node.js and npm, creating a new React application using the create-react-app.</p>
+								<p>This project focuses on automating the infrastructure provisioning and deployment process for hosting a React application on AWS. Here's an overview:</p>
 
-								<p>The second component is the GitLab Repository Configuration. This involves creating a new repository on GitLab to host the React application code.</p>
+								<p><b>Infrastructure as Code (IaC) with Terraform:</b>
+									Terraform was used to define and provision an Amazon S3 bucket, which serves as the hosting platform for the React application. Using Terraform ensures consistent and repeatable infrastructure creation.</p>
 									
-								<p>The third component is the AWS CDK Project Setup. AWS Cloud Development Kit (CDK) is used to define and provision the cloud infrastructure required for the project. This involves installing AWS CDK, initializing a new CDK project with TypeScript, and installing necessary CDK libraries for S3 and S3 deployment. The infrastructure is defined in the CDK stack, which includes creating an S3 bucket to host the React application and configuring the deployment settings. This component allows for infrastructure as code, making the deployment process repeatable and manageable.</p>
+								<p><b>GitLab CI/CD Pipelines:</b>
+									GitLab CI/CD pipelines were employed to automate the deployment process. This involves stages such as building the React application, syncing the application files to the S3 bucket, and ensuring the application is deployed seamlessly.</p>
 									
-								<span class="image fit"><img src="images/pipeline.PNG" alt="" /></span>
-								<p>The fourth component is the GitLab CI/CD Pipeline Configuration. A .gitlab-ci.yml file is created to define the CI/CD pipeline stages, which include build and deploy stages. The build stage installs dependencies and builds the React application, while the deploy stage installs AWS CDK, navigates to the CDK project directory, installs dependencies, and deploys the infrastructure and application to AWS. This pipeline automates the process of building and deploying the application, ensuring that any changes pushed to the GitLab repository are automatically deployed to AWS.</p>
-									
-								<p>Once the deployment is complete, the application can be accessed via the S3 bucket URL.</p>
+								<p><b>State Management with GitLab:</b>
+									GitLab was also used to maintain the Terraform state file, ensuring version control and team collaboration for infrastructure management.</p>
 
+								<p><b>Application Hosting:</b>
+									The S3 bucket is configured to serve the React application as a static website, making it accessible to end-users via the internet.</p>
+
+								
 								<h2>Technology stack</h2>
 								<ul>
 									<li>React</li>
 									<li>GitLab CI/CD</li>
-									<li>AWS CDK</li>
+									<li>Terraform</li>
 									<li>AWS S3</li>
 								</ul>
 								<h2>Project Demo link</h2>
-									<a href="https://cdkappstack-myreactappbucketdbe37738-zmw1pyzgx3we.s3.us-east-1.amazonaws.com/index.html" class="image fit" target="_blank">React App</a>
+									<a href="https://your-react-app-bucket-name-2.s3.us-east-1.amazonaws.com/index.html" class="image fit" target="_blank">React App</a>
 								<h2>GitLab Repo</h2>
-									<a href="https://gitlab.com/saurabhwan/react-aws-cdk-with-cicd">gitlab.com/saurabhwan/react-aws-cdk-with-cicd</a>
+									<a href="https://gitlab.com/saurabhwan/terraform-cicd">gitlab.com/saurabhwan/terraform-cicd</a>
 						</section>
 
 					</div>
