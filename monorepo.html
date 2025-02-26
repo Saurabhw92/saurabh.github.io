@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Saurabh - Project Details</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo">Projects</a>
+				</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h1>Grid Layouts</h1>
+							</header>
+
+							<!-- Text stuff -->
+								<h2>What is the project about?</h2>
+								<p>This project demonstrates the implementation of a monorepo using Nx, containing an Angular application, a React application, and a shared JavaScript library with reusable functionality. I leveraged Nx to manage the monorepo efficiently, ensuring modularity and code reusability between the applications. Additionally, I set up a GitLab CI/CD pipeline to automate the deployment of both applications to AWS S3, streamlining the build and deployment process.</p>
+
+								<h2>Project Graph</h2>
+								<span class="image fit"><img src="images/nxgraph.PNG" alt="" /></span>
+								<p>The Nx project graph provides a visual representation of the dependencies within the monorepo. In this project, both the Angular application (angular-app) and React application (react-app) explicitly depend on the shared library (shared-lib), meaning they utilize common functions or utilities from it. Additionally, the end-to-end (E2E) test projects for each application have implicit dependencies—angular-app-e2e is implicitly dependent on angular-app, and react-app-e2e is implicitly dependent on react-app. This structure ensures modularity, code reuse, and maintainability, allowing updates in the shared library to reflect across both applications while keeping testing workflows aligned with their respective apps.</p>
+								
+								<h2>Gitlab Pipeline</h2>
+								<span class="image fit"><img src="images/nxpipeline.PNG" alt="" /></span>
+								<p>The GitLab CI/CD pipeline utilizes the Nx affected commands to optimize the build and deployment process. Instead of running tasks on all projects, the pipeline intelligently detects which applications or libraries have changed and executes linting, building, and deployment only for the affected ones. This approach significantly improves efficiency by reducing unnecessary computations, leading to faster build times and streamlined deployments. By leveraging Nx's dependency graph and affected command, the pipeline ensures that only the modified parts of the monorepo are processed, making the CI/CD workflow more scalable and performant.</p>
+
+								<h2>Technology stack</h2>
+								<ul>
+									<li>Monorepo Management: Nx</li>
+									<li>Frontend Frameworks: Angular, React</li>
+									<li>Shared Library: JavaScript</li>
+									<li>CI/CD: GitLab CI/CD</li>
+									<li>Cloud Storage & Deployment: AWS S3</li>
+								</ul>
+								<h2>Project Demo link</h2>
+									<a href="https://angular-nx-bucket.s3.us-east-1.amazonaws.com/index.html" class="image fit" target="_blank">Angular App</a>
+									<a href="https://react-nx-bucket.s3.us-east-1.amazonaws.com/index.html" class="image fit" target="_blank">React App</a>
+								<h2>Git Repo</h2>
+									<a href="https://gitlab.com/saurabhwan/nx-project">saurabhwan/nx-project</a>
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer> -->
+
+				<!-- Copyright -->
+					<!-- <div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div> -->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/headerNav.js"></script>
+
+	</body>
+</html>
