@@ -36,7 +36,7 @@
 								<p>This project demonstrates the implementation of a monorepo using Nx, containing an Angular application, a React application, and a shared JavaScript library with reusable functionality. I leveraged Nx to manage the monorepo efficiently, ensuring modularity and code reusability between the applications. Additionally, I set up a GitLab CI/CD pipeline to automate the deployment of both applications to AWS S3, streamlining the build and deployment process.</p>
 
 								<h2>Project Graph</h2>
-								<span class="image fit"><img src="images/nxgraph.PNG" alt="" /></span>
+								<span class="image fit"><img src="images/nxgraph.png" alt="" /></span>
 								<p>The Nx project graph provides a visual representation of the dependencies within the monorepo. In this project, both the Angular application (angular-app) and React application (react-app) explicitly depend on the shared library (shared-lib), meaning they utilize common functions or utilities from it. Additionally, the end-to-end (E2E) test projects for each application have implicit dependencies—angular-app-e2e is implicitly dependent on angular-app, and react-app-e2e is implicitly dependent on react-app. This structure ensures modularity, code reuse, and maintainability, allowing updates in the shared library to reflect across both applications while keeping testing workflows aligned with their respective apps.</p>
 								
 								<h2>Gitlab Pipeline</h2>
