@@ -36,16 +36,16 @@
 								<p>This project is about building and securely deploying a modern Angular e-commerce application using automated DevSecOps practices. It focuses on implementing a complete CI/CD pipeline in GitLab that not only automates the deployment to AWS S3 but also integrates security and quality assurance checks. By incorporating SAST (Static Application Security Testing), DAST (Dynamic Application Security Testing), and linting, the project ensures that the application is production-ready, secure, and follows coding best practices. The result is a scalable, secure, and high-performance e-commerce frontend hosted on AWS.</p>
 
 								<h2>SAST Code scan</h2>
-								<span class="image fit"><img src="images/codescan.png" alt="" /></span>
+								<span class="image fit"><img src="images/codescan.PNG" alt="" /></span>
 								<p>As part of the CI/CD pipeline, a SAST (Static Application Security Testing) scan was integrated using Snyk, a leading security tool for identifying vulnerabilities in source code and dependencies. The scan was executed automatically within the GitLab pipeline, and the results confirmed that the application had no known vulnerabilities, ensuring the codebase is secure and compliant with modern security standards before deployment.</p>
 								
 								<h2>SAST Dependencies scan</h2>
-								<span class="image fit"><img src="images/dependenciesscan.png" alt="" /></span>
+								<span class="image fit"><img src="images/dependenciesscan.PNG" alt="" /></span>
 								<p>In addition to scanning the source code, a dependencies scan was also performed using Snyk to analyze third-party libraries and packages used in the Angular application. This automated scan, integrated into the GitLab CI/CD pipeline, verified that all dependencies were free from known vulnerabilities. The results confirmed a clean bill of health, reinforcing the application's security posture and reducing the risk of supply chain attacks.</p>
 
 								<h2>DAST scan</h2>
-								<span class="image fit"><img src="images/dast1.png" alt="" /></span>
-								<span class="image fit"><img src="images/dast2.png" alt="" /></span>
+								<span class="image fit"><img src="images/dast1.PNG" alt="" /></span>
+								<span class="image fit"><img src="images/dast2.PNG" alt="" /></span>
 								<p>A DAST (Dynamic Application Security Testing) scan was conducted using OWASP ZAP as part of the GitLab CI/CD pipeline to identify runtime vulnerabilities in the deployed Angular e-commerce application. The scan surfaced a few medium and low-severity alerts. While none of these pose immediate critical risk, they provide valuable insights for enhancing security. These issues are documented and will be addressed as future improvements to strengthen the application's production readiness and compliance with web security best practices.</p>
 
 
